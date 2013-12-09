@@ -74,17 +74,17 @@ class SWMagentoConnector {
   
   public static function doCategories ( $args ) {
     $instance = SWMagentoConnector::getInstance ();
-    echo $instance->getCategories();
+    return $instance->getCategories();
   }
   
   public static function doProducts ( $args ) {
     $instance = SWMagentoConnector::getInstance ();
-    echo $instance->getProducts();
+    return $instance->getProducts();
   }
   
   public static function doProduct ( $args ) {
     $instance = SWMagentoConnector::getInstance ();
-    echo $instance->getProduct( $args ['product_id'] );
+    return $instance->getProduct( $args ['product_id'] );
   }
   
   public function getAdminPage () {
